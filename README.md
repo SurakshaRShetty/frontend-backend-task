@@ -4,6 +4,8 @@ A scalable full-stack web application built using React, Node.js, Express, and M
 The app includes JWT-based authentication, a protected dashboard, and CRUD operations
 on user-specific tasks.
 
+---
+
 ## 🚀 Features
 
 ### Authentication
@@ -19,6 +21,8 @@ on user-specific tasks.
 - Create, view, and delete tasks
 - Search and filter tasks
 - Logout functionality
+
+---
 
 ## 🛠 Tech Stack
 
@@ -37,47 +41,95 @@ on user-specific tasks.
 - JWT Authentication
 - bcrypt
 
+---
+
 ## 📁 Project Structure
 
-frontend-backend-app/
-├── frontend/ (React + Tailwind)
-├── backend/ (Node.js + Express + MongoDB)
+# Full-Stack Task Management Dashboard
+
+A scalable full-stack web application built using React, Node.js, Express, and MongoDB.
+The app includes JWT-based authentication, a protected dashboard, and CRUD operations
+on user-specific tasks.
+
+---
+
+## 🚀 Features
+
+### Authentication
+
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- Secure password hashing with bcrypt
+
+### Dashboard
+
+- User-specific task management
+- Create, view, and delete tasks
+- Search and filter tasks
+- Logout functionality
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router DOM
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- JWT Authentication
+- bcrypt
+
+---
+
+## 📁 Project Structure
+
+frontend-backend-task/
+├── frontend/
+│ ├── src/
+│ ├── .gitignore
+│ └── package.json
+│
+├── backend/
+│ ├── src/
+│ ├── .env.example
+│ ├── .gitignore
+│ └── package.json
+│
 └── README.md
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### Backend Setup
 
-````bash
+```bash
 cd backend
 npm install
+```
+
+Start the backend server:
 npm run dev
 
-### Frontend Setup
+Frontend Setup
 cd frontend
 npm install
 npm run dev
 
+Frontend runs at:
+http://localhost:5173
 
-👉 **Why**:
-So the reviewer can run it **without asking you questions**.
-
----
-
-## 6️⃣ API Endpoints / API Docs
-
-```md
-## 🔗 API Endpoints
-
-### Authentication
-- POST `/api/auth/register`
-- POST `/api/auth/login`
-
-### Tasks (Protected)
-- GET `/api/tasks`
-- POST `/api/tasks`
-- DELETE `/api/tasks/:id`
+Backend runs at:
+http://localhost:5000
 
 Authorization Header:
 Bearer <JWT_TOKEN>
-````
